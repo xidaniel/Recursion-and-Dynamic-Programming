@@ -4,8 +4,10 @@
     - Find min question, consider from smaller question 
     - Find a table
    
-## DP Practise question
+## One dimension DP 
    - Fibonacci 
    - Long Asceding Sub-array
    - Maximum Product when Cutting Rope
    - Jump Game
+   
+## Two dimension DP 
