@@ -1,11 +1,11 @@
 # Recursion Types
   [reference](https://www.geeksforgeeks.org/types-of-recursions/)
   - Master Theorem
-    - T(n) = a T(n/b) + f(n)
+    - T(n) = a * T(n/b) + f(n)
       - T(n): Scale of problem
-      - a: number of sub-problems
+      - a: Number of sub-problems
       - T(n/b): Scale of sub-problems
-      - f(n): number of merge operations
+      - f(n): Number of merge operations
     - Example:
     
         | Equation                               | Time              | Space          | Example               |
