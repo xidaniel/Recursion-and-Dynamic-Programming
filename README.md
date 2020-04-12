@@ -1,5 +1,22 @@
 # Recursion Types
   [reference](https://www.geeksforgeeks.org/types-of-recursions/)
+  - Master Theorem
+    - T(n) = a T(n/b) + f(n)
+      - T(n): Scale of problem
+      - a: number of sub-problems
+      - T(n/b): Scale of sub-problems
+      - f(n): number of merge operations
+    - Example:
+    
+        | Equation                               | Time              | Space          | Example               |
+        |----------------------------------------|-------------------|----------------|-----------------------|
+        | T(n) = 2 * T(n/2) + f(n)               | O(nlogn) ~ O(n^2) | O(logn) ~ O(n) | Quick sort            |
+        | T(n) = 2 * T(n/2) + f(n)               | O(nlogn)          | O(n + logn)    | Merge sort            |
+        | T(n) = T(n/2) + f(1)                   | O(logn)           | O(logn)        | Binary search         |
+        | T(n) = 2 * T(n/2) + f(1)               | O(n)              | O(logn) ~ O(n) | Binary tree traversal |
+        | T(n) = n * T(n - 1)                    | O(n!)             | O(n)           | Permutation           |
+        | T(n) = T(n - 1) + T(n - 2) + ...+ T(1) | O(2^n)            | O(n)           | Combination           |
+  
   - Tail Recursion:
     - If a recursive function calling itself and that recursive call is the last statement in the function then it’s known as Tail Recursion.After that call the recursive function performs nothing. The function has to process or perform any operation at the time of calling and it does nothing at returning time.
     - Codeing Example:
